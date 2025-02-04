@@ -40,59 +40,6 @@
             font-family: 'Brush Script MT', cursive; /* Script-style font */
             margin-top: 10px;
         }
-
-        /* Confetti Animation Styles */
-        .confetti {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9999;
-            width: 100%;
-            height: 100%;
-        }
-
-        .confetti div {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            animation: fall 4s infinite ease-in;
-        }
-
-        /* Different shades of pink for confetti */
-        .confetti div:nth-child(odd) {
-            background-color: #FF66B2; /* Bubblegum pink */
-        }
-
-        .confetti div:nth-child(even) {
-            background-color: #FF1493; /* Deep pink */
-        }
-
-        @keyframes fall {
-            0% {
-                transform: translateY(-100px) rotate(0deg);
-            }
-            100% {
-                transform: translateY(100vh) rotate(360deg);
-            }
-        }
-
-        /* Randomize positions */
-        .confetti div:nth-child(1) { left: 5%; animation-duration: 3s; animation-delay: 0s; }
-        .confetti div:nth-child(2) { left: 15%; animation-duration: 3.5s; animation-delay: 0s; }
-        .confetti div:nth-child(3) { left: 25%; animation-duration: 4s; animation-delay: 1s; }
-        .confetti div:nth-child(4) { left: 35%; animation-duration: 4.5s; animation-delay: 0s; }
-        .confetti div:nth-child(5) { left: 45%; animation-duration: 3s; animation-delay: 2s; }
-        .confetti div:nth-child(6) { left: 55%; animation-duration: 4s; animation-delay: 1s; }
-        .confetti div:nth-child(7) { left: 65%; animation-duration: 4s; animation-delay: 0s; }
-        .confetti div:nth-child(8) { left: 75%; animation-duration: 4.5s; animation-delay: 2s; }
-        .confetti div:nth-child(9) { left: 85%; animation-duration: 3s; animation-delay: 1s; }
-        .confetti div:nth-child(10) { left: 95%; animation-duration: 4s; animation-delay: 0s; }
-        .confetti div:nth-child(11) { left: 50%; animation-duration: 3.8s; animation-delay: 0.5s; }
-        .confetti div:nth-child(12) { left: 60%; animation-duration: 4.2s; animation-delay: 1.2s; }
-        .confetti div:nth-child(13) { left: 70%; animation-duration: 3.7s; animation-delay: 1.5s; }
-        .confetti div:nth-child(14) { left: 80%; animation-duration: 4s; animation-delay: 1s; }
-        .confetti div:nth-child(15) { left: 90%; animation-duration: 4.5s; animation-delay: 2s; }
     </style>
 </head>
 <body>
@@ -102,25 +49,6 @@
     </a>
     <div class="click-me">Click Me</div>
     <img src="monkey.png" alt="Monkey Image" class="monkey-img">
-
-    <!-- Confetti Animation -->
-    <div class="confetti">
-        <!-- Generate confetti divs -->
-        <div style="left: 5%; animation-duration: 3s; animation-delay: 0s;"></div>
-        <div style="left: 15%; animation-duration: 3.5s; animation-delay: 0s;"></div>
-        <div style="left: 25%; animation-duration: 4s; animation-delay: 1s;"></div>
-        <div style="left: 35%; animation-duration: 4.5s; animation-delay: 0s;"></div>
-        <div style="left: 45%; animation-duration: 3s; animation-delay: 2s;"></div>
-        <div style="left: 55%; animation-duration: 4s; animation-delay: 1s;"></div>
-        <div style="left: 65%; animation-duration: 4s; animation-delay: 0s;"></div>
-        <div style="left: 75%; animation-duration: 4.5s; animation-delay: 2s;"></div>
-        <div style="left: 85%; animation-duration: 3s; animation-delay: 1s;"></div>
-        <div style="left: 95%; animation-duration: 4s; animation-delay: 0s;"></div>
-        <div style="left: 50%; animation-duration: 3.8s; animation-delay: 0.5s;"></div>
-        <div style="left: 60%; animation-duration: 4.2s; animation-delay: 1.2s;"></div>
-        <div style="left: 70%; animation-duration: 3.7s; animation-delay: 1.5s;"></div>
-        <div style="left: 80%; animation-duration: 4s; animation-delay: 1s;"></div>
-        <div style="left: 90%; animation-duration: 4.5s; animation-delay: 2s;"></div>
-    </div>
 </body>
 </html>
+
